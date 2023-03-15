@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo-list</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="image/pencil.png">
+</head>
+<body>
+
+        <div class="container">
+            <div class="todo-container">
+                <div class="header">
+                    <h3 class="heading-todo">My todo list</h3>  
+                    <div class="notodo" id="notodo">
+                        <p>It's the best way to manage and organize your life. <br>
+                            You'll easily break down your big goals into items, and items into tasks.</p>
+                        <img src="image/list-pad.png" class="todo-img">
+                        <h3>Empty</h3>
+                    </div>
+                </div>
+                <div  id="todo-container">
+                   <!-- <div class="todo">
+                        <input type="checkbox" class="todo-done">
+                        <div class="content">
+                            <p class="title">This is my first task</p>
+                            <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p class="due"> 10 jan </p>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            
+
+            <div class="add-todo-container sticky">
+                <input type="text" placeholder="Task name here..."  class="title-input" name="" id="title">
+                <textarea placeholder="Description" class="desc-input"  id="desc" cols="50" rows="10"></textarea>
+                <div class="add-flex">
+                    <input type="datetime-local"  class="date-input" id="dueDate">
+                    <button class="btn" id="btn">Add Task</button>
+                </div>
+
+            </div>
+        </div>
+
+
+    <script src="./app.js"></script>
+    
+</body>
+</html>
